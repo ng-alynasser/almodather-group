@@ -1,0 +1,30 @@
+@import "styles";
+
+.navbar {
+  overflow: auto;
+  display: flex;
+  .navbar__logo {
+    width: auto;
+  }
+
+  .navbar__items {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      font-size: 1.5rem;
+      margin-right: 1.2em;
+
+      > a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        &:hover {
+          border-bottom: 1px solid $secondary-color;
+          color: $secondary-color;
+          transition: all 0.5s ease-in;
+        }
+      }
+    }
+  }
+}
