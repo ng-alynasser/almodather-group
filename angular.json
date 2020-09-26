@@ -27,7 +27,7 @@
             "styles": ["src/styles/styles.scss"],
             "scripts": [],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/styles", "dist"]
+              "includePaths": ["src/styles", "dist", "src/_redirects"]
             }
           },
           "configurations": {
@@ -124,7 +124,7 @@
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "stylePreprocessorOptions": {
-              "includePaths": ["src/styles", "dist"]
+              "includePaths": ["src/styles", "dist", "src/_redirects"]
             }
           },
           "configurations": {
