@@ -1,29 +1,7 @@
 <app-layout>
   <app-layout-header>
-    <nav class="navbar container">
-      <img
-        class="navbar__logo"
-        src="../assets/images/modather-logo.png"
-        alt="Modather-group"
-      />
-      <ul class="navbar__items">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/products">Products</a></li>
-        <li><a href="/press">Press</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/about">About</a></li>
-      </ul>
-    </nav>
-
-    <div class="header__content container">
-      <h2>Delivering results <br />with solid dependability</h2>
-      <p>
-        Specializing in After Hours and Weekend service. <br />
-        We give you the service you need when you need it.
-      </p>
-      <button>View Products</button>
-    </div>
+    <app-nav></app-nav>
   </app-layout-header>
-
+  <router-outlet></router-outlet>
   <app-layout-footer></app-layout-footer>
 </app-layout>

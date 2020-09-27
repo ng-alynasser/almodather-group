@@ -1,16 +1,6 @@
 @import "styles.scss";
 
 :host {
-  display: block;
-  position: relative;
-  background-color: $primary-color;
-  background-image: url("../../../../assets/images/header-bg-1.png");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 60% 100%;
-  background-blend-mode: multiply;
-  color: white;
-  padding-bottom: 4rem;
   .floating-container {
     position: relative;
   }

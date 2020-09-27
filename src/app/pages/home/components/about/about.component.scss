@@ -1,0 +1,16 @@
+@import "styles";
+
+.container {
+  margin-top: 2em;
+  background-color: white;
+  text-align: center;
+  padding: 2em 8em;
+  h3 {
+    color: $primary-color;
+    margin-bottom: 1em;
+  }
+  p {
+    font-size: 1.1em;
+    color: gray;
+  }
+}
