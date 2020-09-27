@@ -1,0 +1,49 @@
+@import "styles";
+
+.footer {
+  background-color: $primary-color;
+  padding-top: 1.5em;
+  margin-top: 2em;
+
+  .row {
+    color: white;
+    transition: all 0.5s ease-in-out;
+
+    h4 {
+      margin-bottom: 0.9em;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        margin-bottom: 0.5em;
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            transition: all 0.5s ease-in-out;
+            color: $secondary-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .col {
+      margin-top: 1.5em;
+      text-align: center;
+      padding-bottom: 1.2em;
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 1.2em;
+
+        &:hover {
+          transition: all 0.5s ease-in-out;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

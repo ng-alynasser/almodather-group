@@ -5,9 +5,10 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { ProductsSectionComponent } from './components/products-section/products-section.component';
 import { AboutComponent } from './components/about/about.component';
 import { MembersComponent } from './components/members/members.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, ProductsSectionComponent, AboutComponent, MembersComponent],
+  declarations: [HomeComponent, HeaderComponent, ProductsSectionComponent, AboutComponent, MembersComponent, FormComponent],
   imports: [SharedModule],
 })
 export class HomeModule {}
