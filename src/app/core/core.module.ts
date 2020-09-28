@@ -6,11 +6,17 @@ import { buildIconLibrary } from './icon-library';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeModule } from '../pages/home/home.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavMobileComponent } from './components/nav-mobile/nav-mobile.component';
 
-const CORE_COMPONENTS = [FooterComponent, NavComponent];
+const CORE_COMPONENTS = [FooterComponent, NavComponent, NavMobileComponent];
 
 @NgModule({
-  declarations: [...CORE_COMPONENTS, NavComponent, FooterComponent],
+  declarations: [
+    ...CORE_COMPONENTS,
+    NavComponent,
+    FooterComponent,
+    NavMobileComponent,
+  ],
   imports: [SharedModule, BrowserModule, HomeModule],
   exports: [...CORE_COMPONENTS],
 })

@@ -3,12 +3,18 @@
 .header {
   background-color: white;
   height: 65px;
+
   .nav {
     .nav__logo {
       position: absolute;
       height: 120px;
       width: 120px;
-      z-index: 999;
+      z-index: 2;
+
+      @include media-breakpoint-down(md) {
+        height: 100px;
+        width: 100px;
+      }
 
       @include media-breakpoint-down(sm) {
         height: 75px;
@@ -23,10 +29,16 @@
       display: flex;
       li {
         font-size: 1.5rem;
-
+        @include media-breakpoint-down(md) {
+          font-size: 1rem;
+        }
         &:not(:last-child) {
           margin-right: 1.2em;
+          @include media-breakpoint-down(md) {
+            margin-right: 0.9em;
+          }
         }
+
         > a {
           color: $primary-color;
           text-decoration: none;
@@ -39,19 +51,19 @@
         }
       }
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         display: none;
-        text-align: right;
       }
     }
 
     button {
-      display: none;
+      display: block;
+      margin-left: auto;
+      font-size: 2rem;
+      color: $primary-color;
 
-      @include media-breakpoint-down(md) {
-        display: block;
-        margin-left: auto;
-        font-size: 2rem;
+      @include media-breakpoint-up(sm) {
+        display: none;
       }
     }
   }

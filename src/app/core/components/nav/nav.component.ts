@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { StateService } from '../../providers/state.service';
 
 @Component({
@@ -7,12 +7,10 @@ import { StateService } from '../../providers/state.service';
   styleUrls: ['./nav.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavComponent implements OnInit {
+export class NavComponent {
   constructor(private stateService: StateService) {}
 
-  ngOnInit(): void {}
-
-  toggle() {
+  toggleOn() {
     this.stateService.setState('mobileNavMenuIsOpen', true);
   }
 }
