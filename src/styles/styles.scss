@@ -5,10 +5,10 @@ $primary-color: #0d004f;
 $secondary-color: #fa6400;
 
 body {
-  font-size: 1rem;
   font-family: Helvetica, serif;
   background-image: url("../assets/images/page-bg.png");
   background-size: cover;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
