@@ -6,6 +6,8 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 export function buildIconLibrary(library: FaIconLibrary) {
-  library.addIcons(faTwitter, faFacebook, faInstagram, faYoutube);
+  library.addIcons(faTwitter, faFacebook, faInstagram, faYoutube, faBars);
 }
