@@ -5,14 +5,14 @@
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
-  height: 100%;
-  width: 100%;
   top: 0;
   left: 0;
   bottom: 0;
-  transform: translateX(-110vw) translateX(0);
+  height: 100vh;
+  width: calc(100vw - 3rem);
+  transform: translateX(-102vw) translateX(3rem);
   transition: transform 0.8s;
-  overflow: auto;
+  overflow: hidden;
   background-color: $primary-color;
   z-index: 3;
 
@@ -56,7 +56,6 @@ button.close {
 
 .col {
   text-align: center;
-  padding-bottom: 1.2em;
   a {
     color: white;
     text-decoration: none;

@@ -8,7 +8,14 @@ import { MembersComponent } from './components/members/members.component';
 import { FormComponent } from './components/form/form.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, ProductsSectionComponent, AboutComponent, MembersComponent, FormComponent],
+  declarations: [
+    HomeComponent,
+    HeaderComponent,
+    ProductsSectionComponent,
+    AboutComponent,
+    MembersComponent,
+    FormComponent,
+  ],
   imports: [SharedModule],
 })
 export class HomeModule {}

@@ -1,4 +1,5 @@
 @import "styles";
+@import "~swiper/swiper";
 
 .members {
   text-align: center;
@@ -13,18 +14,11 @@
       margin-bottom: 1em;
     }
   }
-  .container {
-    .members__images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding-bottom: 1.5em;
-      img {
-        flex-basis: 100px;
-        &:not(:last-child) {
-          margin-right: 1em;
-        }
-      }
+
+  .card {
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
