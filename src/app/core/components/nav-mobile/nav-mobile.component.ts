@@ -4,6 +4,7 @@ import {
   HostBinding,
   Input,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { StateService } from '../../providers/state.service';
 
 @Component({
@@ -17,9 +18,14 @@ export class NavMobileComponent {
   @Input()
   visible: boolean;
 
-  constructor(private stateService: StateService) {}
+  constructor(private stateService: StateService, private router: Router) {}
 
   close() {
     this.stateService.setState('mobileNavMenuIsOpen', false);
+  }
+
+  navigateTo(route: string) {
+    this.router.navigate([`${route}`]);
+    this.close();
   }
 }
