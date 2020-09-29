@@ -7,9 +7,10 @@ $secondary-color: #fa6400;
 body {
   font-family: Helvetica, serif;
   background-image: url("../assets/images/page-bg.png");
-  background-size: cover;
+  background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 img {

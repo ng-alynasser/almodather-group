@@ -1,20 +1,51 @@
+@import "styles";
+
 .products_section {
-  padding-top: 1rem;
+  border-top: 15px solid white;
+  @include media-breakpoint-down(sm) {
+    border-top: 0;
+  }
+
   .container {
     h2 {
-      margin: 1.2em 0;
+      color: $primary-color;
+      font-weight: bold;
+      padding: 1.8rem;
+      margin: 0 auto;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.4rem;
+        padding-bottom: 0;
+      }
     }
     section {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(4, 1fr);
       gap: 1.2em;
+
+      @include media-breakpoint-down(sm) {
+        gap: 5px;
+        padding: 1rem;
+      }
+
       figure {
         margin: 0;
         &:nth-child(1) {
+          border: 0;
+          border-left: 10px solid $secondary-color;
+          border-top: 10px solid $secondary-color;
+          padding-left: 10px;
+          padding-top: 10px;
           grid-column: 1 / 2;
           grid-row: 1 / 4;
-          margin: 0;
+
+          @include media-breakpoint-down(sm) {
+            border-width: 5px;
+            padding-left: 5px;
+            padding-top: 5px;
+          }
         }
         &:nth-child(2) {
           grid-column: 2 / 3;
@@ -25,6 +56,17 @@
           grid-row: 4 / 5;
         }
         &:nth-child(4) {
+          border-right: 10px solid $primary-color;
+          border-bottom: 10px solid $primary-color;
+          padding-right: 10px;
+          padding-bottom: 10px;
+
+          @include media-breakpoint-down(sm) {
+            border-width: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+          }
+
           grid-column: 2 / 3;
           grid-row: 2 / 5;
         }
