@@ -6,6 +6,7 @@ import { ProductsSectionComponent } from './components/products-section/products
 import { AboutComponent } from './components/about/about.component';
 import { MembersComponent } from './components/members/members.component';
 import { FormComponent } from './components/form/form.component';
+import { SwiperModule } from 'ngx-swiper-wrapper';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,6 @@ import { FormComponent } from './components/form/form.component';
     MembersComponent,
     FormComponent,
   ],
-  imports: [SharedModule],
+  imports: [SharedModule, SwiperModule],
 })
 export class HomeModule {}
