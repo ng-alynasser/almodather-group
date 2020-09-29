@@ -1,52 +1,58 @@
 @import "styles";
 
-.contact_us {
-  h3 {
-    text-transform: uppercase;
-    text-align: center;
-    color: $primary-color;
-    padding-top: 1em;
+.wrapper {
+  @include media-breakpoint-up(sm) {
+    padding: 0 8rem;
   }
 
-  form {
-    padding-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-
-    @include media-breakpoint-down(sm) {
-      padding: 1em;
-    }
-
-    input,
-    textarea {
-      padding: 1em;
-      margin-bottom: 1em;
-
-      @include media-breakpoint-down(sm) {
-        padding: 0.5em;
-      }
-    }
-
-    button {
-      align-self: flex-end;
-      padding: 0.5rem 2rem;
-      font-size: 1.2rem;
+  .container {
+    h3 {
       text-transform: uppercase;
-      border: 3px solid $primary-color;
+      text-align: center;
       color: $primary-color;
-      background-color: transparent;
+      padding-top: 1em;
+    }
+
+    form {
+      padding-top: 1.5em;
+      display: flex;
+      flex-direction: column;
 
       @include media-breakpoint-down(sm) {
-        align-self: center;
-        padding: 0.3rem 1.5rem;
-        font-size: 1rem;
+        padding: 1em;
       }
 
-      &:hover {
-        background-color: $primary-color;
-        color: white;
+      input,
+      textarea {
+        padding: 1em;
+        margin-bottom: 1em;
 
-        transition: all 0.5s ease-in-out;
+        @include media-breakpoint-down(sm) {
+          padding: 0.5em;
+        }
+      }
+
+      button {
+        align-self: flex-end;
+        padding: 0.5rem 2rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border: 3px solid $primary-color;
+        color: $primary-color;
+        background-color: transparent;
+
+        @include media-breakpoint-down(sm) {
+          align-self: center;
+          padding: 0.3rem 1.5rem;
+          font-size: 1rem;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+          color: white;
+
+          transition: all 0.5s ease-in-out;
+        }
       }
     }
   }

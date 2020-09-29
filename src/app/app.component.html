@@ -1,6 +1,4 @@
-<div>
-  <app-nav></app-nav>
-  <app-nav-mobile [visible]="navMenuVisible$ | async"></app-nav-mobile>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
-</div>
+<app-nav></app-nav>
+<app-nav-mobile [visible]="navMenuVisible$ | async"></app-nav-mobile>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
