@@ -9,18 +9,19 @@ import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 })
 export class MembersComponent {
   options: SwiperConfigInterface = {
-    slidesPerView: 4,
-    spaceBetween: 15,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
     },
     breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
       400: {
         slidesPerView: 2,
         spaceBetween: 10,
       },
-
       600: {
         slidesPerView: 3,
         spaceBetween: 10,
