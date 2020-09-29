@@ -20,16 +20,11 @@
       justify-content: space-between;
       padding-bottom: 1.5em;
       img {
-        flex: 1 1 200px;
+        flex-basis: 100px;
         &:not(:last-child) {
           margin-right: 1em;
         }
       }
-      // figure {
-      //   &:nth-child(1) {
-      //     border-bottom: 5px solid $primary-color;
-      //   }
-      // }
     }
   }
 }
