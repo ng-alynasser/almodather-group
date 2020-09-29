@@ -1,0 +1,44 @@
+@import "styles";
+
+:host {
+  flex-basis: calc(50% - 1rem);
+  margin-bottom: 1rem;
+  &:nth-child(odd) {
+    margin-right: 1rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+    }
+  }
+  background-color: transparent;
+
+  @include media-breakpoint-down(sm) {
+    flex-basis: 100%;
+  }
+}
+
+.card {
+  border: 0;
+  background-color: transparent;
+  .card-body {
+    padding-left: 0;
+    padding-bottom: 0;
+    p {
+      margin-bottom: 8px;
+    }
+    .genre {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: grey;
+    }
+
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}

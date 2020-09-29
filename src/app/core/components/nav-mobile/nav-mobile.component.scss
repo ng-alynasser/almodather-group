@@ -9,8 +9,8 @@
   left: 0;
   bottom: 0;
   height: 100vh;
-  width: calc(100vw - 3rem);
-  transform: translateX(-102vw) translateX(3rem);
+  width: 100vw;
+  transform: translateX(-102vw) translateX(0);
   transition: transform 0.8s;
   overflow: hidden;
   background-color: $primary-color;
