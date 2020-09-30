@@ -1,1 +1,8 @@
-<p>press works!</p>
+<app-press-header></app-press-header>
+<div class="wrapper">
+  <div class="container">
+    <ng-container *ngFor="let pressInfo of news">
+      <app-press-card [pressInfo]="pressInfo"></app-press-card>
+    </ng-container>
+  </div>
+</div>

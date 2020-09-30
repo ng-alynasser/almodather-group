@@ -3,10 +3,8 @@
 .footer {
   background-color: $primary-color;
   padding-top: 1.5em;
-  margin-top: 2em;
 
   @include media-breakpoint-down(sm) {
-    margin-top: 1em;
     text-align: center;
   }
 

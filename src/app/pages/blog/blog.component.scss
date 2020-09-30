@@ -3,12 +3,16 @@
 .wrapper {
   background: linear-gradient(
     0deg,
-    rgb(189, 189, 189, 0.7) 0%,
-    white 75%,
+    rgba(189, 189, 189, 0.8) 0%,
+    rgba(250, 249, 249, 0.8) 75%,
     rgba(255, 131, 0, 0.2) 100%
   );
-  background-blend-mode: lighten;
-  padding-top: 2rem;
+  padding-top: 1rem;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+  }
+
   .container {
     margin: 0 auto;
     display: flex;

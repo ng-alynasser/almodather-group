@@ -2,15 +2,14 @@
 
 .wrapper {
   @include media-breakpoint-up(sm) {
-    padding: 0 8rem;
+    padding: 1rem 8rem;
   }
 
   .container {
-    h3 {
+    h2 {
       text-transform: uppercase;
       text-align: center;
       color: $primary-color;
-      padding-top: 1em;
     }
 
     form {

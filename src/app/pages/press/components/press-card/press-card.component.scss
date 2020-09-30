@@ -1,0 +1,35 @@
+@import "styles";
+
+:host {
+  flex-basis: calc(50% - 1rem);
+  margin-bottom: 1rem;
+  &:nth-child(odd) {
+    margin-right: 1rem;
+  }
+}
+
+.card {
+  border: 0;
+
+  .card-featured {
+    background-color: $secondary-color;
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+  }
+  .card-img-overlay {
+    top: unset;
+    background: linear-gradient(
+      90deg,
+      rgba(20, 16, 71, 0.8) 80%,
+      rgba(20, 16, 71, 0.8) 20%
+    );
+
+    .card-text:last-child {
+      text-align: right;
+    }
+  }
+}

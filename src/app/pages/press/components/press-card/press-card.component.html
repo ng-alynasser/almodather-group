@@ -1,0 +1,14 @@
+<div class="card bg-dark text-white">
+  <img [src]="pressInfo?.imageUrl" class="card-img" alt="..." />
+
+  <span *ngIf="pressInfo?.featured" class="card-featured">Featured</span>
+  <div class="card-img-overlay">
+    <h5 class="card-title">
+      {{ pressInfo?.title }}
+    </h5>
+    <p class="card-text">
+      {{ pressInfo?.description }}
+    </p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+</div>

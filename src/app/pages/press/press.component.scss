@@ -1,0 +1,20 @@
+@import "styles";
+
+.wrapper {
+  background: linear-gradient(
+    0deg,
+    rgba(189, 189, 189, 0.8) 0%,
+    rgba(250, 249, 249, 0.8) 75%,
+    rgba(27, 2, 141, 0.4) 100%
+  );
+  padding-top: 1rem;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
