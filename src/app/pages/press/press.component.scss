@@ -19,5 +19,9 @@
     .sidebar {
       flex-basis: 30%;
     }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 }

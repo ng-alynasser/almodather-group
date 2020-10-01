@@ -10,6 +10,10 @@
   &:first-child {
     flex-basis: 100%;
   }
+
+  @include media-breakpoint-down(md) {
+    flex-basis: 100%;
+  }
 }
 
 .card {
@@ -23,24 +27,40 @@
     position: absolute;
     top: 10px;
     right: 10px;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0.1rem 0.3rem;
+      font-size: 0.6rem;
+    }
   }
 
   .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     top: 65%;
     background: linear-gradient(
       90deg,
       rgba(20, 16, 71, 0.8) 80%,
       rgba(20, 16, 71, 0.8) 20%
     );
-
     .card-title {
       font-size: 1rem;
+      margin-bottom: 0;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 0.8rem;
+      }
     }
 
     .card-text {
       &:last-child {
-        text-align: right;
+        align-self: flex-end;
+        color: goldenrod;
       }
+
+      font-size: 0.8rem;
     }
   }
 }
