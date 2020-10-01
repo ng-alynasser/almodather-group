@@ -31,11 +31,11 @@ export class MembersComponent {
         spaceBetween: 20,
       },
       1200: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 20,
       },
       1500: {
-        slidesPerView: 6,
+        slidesPerView: 4,
         spaceBetween: 20,
       },
     },
