@@ -1,8 +1,10 @@
 <app-press-header></app-press-header>
 <div class="wrapper">
   <div class="container">
-    <ng-container *ngFor="let pressInfo of news">
-      <app-press-card [pressInfo]="pressInfo"></app-press-card>
-    </ng-container>
+    <app-news-grid></app-news-grid>
+    <div class="sidebar">
+      <app-upcoming-projects></app-upcoming-projects>
+      <app-most-read></app-most-read>
+    </div>
   </div>
 </div>

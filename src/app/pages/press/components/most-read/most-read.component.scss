@@ -1,0 +1,31 @@
+@import "styles";
+
+.sidebar {
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid $secondary-color;
+  margin-top: 1rem;
+
+  h5 {
+    text-align: center;
+  }
+
+  hr {
+    margin: 5px;
+  }
+
+  &__links {
+    padding: 16px;
+
+    a {
+      text-decoration: none;
+      color: grey;
+
+      &:hover {
+        text-decoration: underline;
+        color: $primary-color;
+        transition: all 0.5s ease-out;
+      }
+    }
+  }
+}
