@@ -14,16 +14,18 @@
 
     h4 {
       margin-bottom: 0.9em;
+      font-size: 1rem;
+      font-weight: bold;
 
       @include media-breakpoint-down(sm) {
         margin-bottom: 0.3em;
-        font-size: 1.3rem;
       }
     }
     ul {
       list-style-type: none;
       padding: 0;
       li {
+        font-size: 0.7rem;
         margin-bottom: 0.5em;
         a {
           color: white;
@@ -42,6 +44,8 @@
       margin-top: 1.5em;
       text-align: center;
       padding-bottom: 1.2em;
+      font-size: 1rem;
+
       a {
         color: white;
         text-decoration: none;

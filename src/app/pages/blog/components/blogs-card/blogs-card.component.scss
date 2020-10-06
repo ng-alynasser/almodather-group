@@ -23,6 +23,7 @@
   .card-body {
     padding-left: 0;
     padding-bottom: 0;
+    font-size: 0.8rem;
     p {
       margin-bottom: 8px;
     }
@@ -33,8 +34,17 @@
       color: grey;
     }
 
-    .title {
-      font-weight: 600;
+    a {
+      text-decoration: none;
+      .title {
+        font-weight: 600;
+      }
+      color: inherit;
+
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
     }
   }
 

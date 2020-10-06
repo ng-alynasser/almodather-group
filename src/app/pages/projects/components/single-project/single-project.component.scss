@@ -1,0 +1,74 @@
+@import "styles";
+
+.wrapper {
+  background: linear-gradient(
+    0deg,
+    rgba(75, 75, 77, 0.5) 0%,
+    rgba(250, 249, 249, 1) 80%
+  );
+
+  .container {
+    padding-top: 5rem;
+    color: $primary-color;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 1.5rem;
+    }
+
+    .row {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include media-breakpoint-down(md) {
+        &:nth-child(2) {
+          margin-top: 1rem;
+        }
+      }
+
+      h3 {
+        margin-bottom: 1.5rem;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+      h5 {
+        margin-bottom: 1.5rem;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rb-border {
+  border-bottom: 6px solid $secondary-color;
+  border-right: 6px solid $secondary-color;
+
+  @include media-breakpoint-down(md) {
+    border: 0;
+  }
+}
+
+.tl-border {
+  border-top: 6px solid $primary-color;
+  border-left: 6px solid $primary-color;
+
+  @include media-breakpoint-down(md) {
+    border: 0;
+  }
+}

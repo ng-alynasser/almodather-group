@@ -1,0 +1,24 @@
+@import "styles";
+
+.card {
+  border: 3px solid $secondary-color;
+  padding: 0.3rem;
+  background-color: transparent;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
+  }
+
+  .card-img-overlay {
+    background-color: $secondary-color;
+    background-clip: padding-box;
+    top: 75%;
+    .card-title {
+      font-size: 1rem;
+    }
+  }
+}

@@ -2,15 +2,14 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'],
+  selector: 'app-projects-header',
+  templateUrl: './projects-header.component.html',
+  styleUrls: ['./projects-header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsHeaderComponent implements OnInit {
   options: SwiperConfigInterface = {
     speed: 1000,
-    spaceBetween: 10,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -23,16 +22,16 @@ export class ProjectsComponent implements OnInit {
         slidesPerView: 1,
       },
       600: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
-        slidesPerView: 4,
+        slidesPerView: 1,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 1,
       },
       1500: {
-        slidesPerView: 4,
+        slidesPerView: 1,
       },
     },
   };

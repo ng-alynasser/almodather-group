@@ -1,0 +1,84 @@
+@import "styles";
+
+.wrapper {
+  background: linear-gradient(
+    0deg,
+    rgba(15, 1, 78, 0.2) 0%,
+    rgba(250, 249, 249, 1) 90%
+  );
+
+  .container {
+    padding: 3rem 0.5rem;
+    padding-bottom: 1rem;
+    color: $primary-color;
+    text-align: center;
+    h2 {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      font-weight: 500;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1.1rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      @include media-breakpoint-down(sm) {
+        font-size: 0.7rem;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 1rem 1rem;
+    }
+
+    .swiper {
+      position: relative;
+      &__card {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+      &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(250, 249, 249, 0.3) 15%,
+          rgba(100, 100, 100, 0.7) 70%,
+          rgba(27, 2, 141, 0.6) 100%
+        );
+
+        &__content {
+          position: absolute;
+          top: 15%;
+          left: 70%;
+          right: 5%;
+          color: white;
+          text-align: initial;
+
+          h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

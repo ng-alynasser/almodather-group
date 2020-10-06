@@ -1,10 +1,14 @@
 <div class="card">
-  <img [src]="blog?.imageUrl" class="card-img-top" />
+  <a routerLink="/blog/single-blog">
+    <img [src]="blog?.imageUrl" class="card-img-top" />
+  </a>
   <div class="card-body">
     <p class="genre">{{ blog?.genre }}</p>
-    <p class="title">{{ blog?.title }}</p>
-    <p class="description">
-      {{ blog?.description }}
-    </p>
+    <a routerLink="/blog/single-blog">
+      <p class="title">{{ blog?.title }}</p>
+      <p class="description">
+        {{ blog?.description }}
+      </p>
+    </a>
   </div>
 </div>
